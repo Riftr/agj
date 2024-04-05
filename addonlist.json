@@ -1,0 +1,50 @@
+[
+    {
+        "id": 2,
+        "categoryId": 1,
+        "version": "1.0",
+        "lastUpdate": 1111111111111,
+        "title": "EggBoi",
+        "author": "Somebody",
+        "fileInfoUri": "https://google.com/index.html",
+        "downloads": 12345,
+        "downloadsMonthly": 50,
+        "favorites": 6,
+        "gameVersions": [
+            "1.0"
+        ],
+        "checksum": "thisisnotarealchecksum",
+        "addons": [
+            {
+                "path": "EggBoi",
+                "addOnVersion": "",
+                "apiVersion": "100000"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "categoryId": 2,
+        "version": "1.5",
+        "lastUpdate": 1111122111111,
+        "title": "EggGirl",
+        "author": "Another Person",
+        "fileInfoUri": "https://bing.com",
+        "downloads": 1000,
+        "downloadsMonthly": 2,
+        "favorites": 22,
+        "gameVersions": null,
+        "checksum": "notarealchecksumeither",
+        "addons": [
+            {
+                "path": "EggGirl",
+                "addOnVersion": "",
+                "apiVersion": "100000",
+                "optionalDependencies": [
+                    "LibDep-2.0",
+                    "LibAnotherDep-1.0"
+                ]
+            }
+        ]
+    }
+]
