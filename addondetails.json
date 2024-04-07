@@ -1,0 +1,184 @@
+[
+    {
+        "id": 23,
+        "categoryId": 157,
+        "version": "3.0.5",
+        "lastUpdate": 1425435256000,
+        "checksum": "cd5a0423f867a7f66d4486fd75660b56",
+        "fileName": "CombatLogStatistics-3.0.5.zip",
+        "downloadUri": "https://cdn.esoui.com/downloads/getfile.php?id=23&d=1425435256&minion",
+        "pendingUpdate": 0,
+        "title": "Combat Log Statistics (CLS)",
+        "author": "zeakfury",
+        "description": "[CENTER][b][SIZE=\"4\"][COLOR=\"Green\"]Combat Log Statistics (CLS)[/COLOR][/SIZE][/b][/CENTER]\r\n\r\nBased on the [URL=\"http://tamrielfoundry.com/\"][COLOR=\"DeepSkyBlue\"]Foundry Tactical Combat[/COLOR][/URL] addon made by Atropos. CLS displays current combat in a separate window. It should be used as a tool to help form strategies in-game. \r\n\r\n[b][COLOR=\"green\"]Included[/COLOR][/b]\r\n[LIST=1]\r\n[*]Combat Log\r\n[*]Real-Time DPS/HPS Window, with \"Copy to Chat\" button\r\n[*]What Happened to Me? Log\r\n[*]Attack Abilities Used with Stats (click the number in the box)\r\n[*]Healing Abilities Used with Stats (click the number in the box)\r\n[*]Life-Time Stats\r\n[*]Many Settings\r\n[/LIST]\r\n(Look at pictures for more details)\r\n\r\n[b][COLOR=\"green\"]Navigation[/COLOR][/b]\r\n[LIST]\r\n[*][I]\"/CLS\"[/I] or[I] \"/CLS help\"[/I] will bring up all options in game\r\n[*][I]\"/CLS Main\"[/I] will show the Main Combat Log Window\r\n[*][I]\"/CLS DPS\"[/I] will show the DPS Window\r\n[*]Under the Game Menu (ESC), Under Settings => Addon Settings, there is \"CLS\"\r\n[*]Also view the combat log in the first chat window, a chat window of its own, both, or neither\r\n[/LIST]\r\n\r\n[B][COLOR=\"Green\"]To Do:[/COLOR][/B]\r\n[LIST=1]\r\n[*]More UI Options\r\n[*]More Analysis\r\n[/LIST]",
+        "changeLog": "V3.0.5:\r\n- Added Max Crit Damage and Heal to lifetime stats\r\n- Added non-damage/healing combat effects to log (interrupts, stuns, roots, etc.)\r\n- updated to API version 100011.\r\n\r\nV3.0.4:\r\n- Added a button to DPS window to copy its contents to the chat input box.\r\n- Added menu options to reset the window positions, and to lock the windows in place.\r\n- Restricted windows to the game screen, so they don't go flying away\r\n\r\nV3.0.3:\r\n- Fixed a bug when displaying the Attacks/Heals window, where an error would happen if there were more recorded attacks/heals than lines to display them. It now only displays the top attacks/heals.\r\n- Fixed a problem with resized windows not recording their new size properly.\r\n\r\nV3.0.2a:\r\n- Fixed an error in the manifest file. Oops!\r\n\r\nV3.0.2:\r\n- Re-added XP gain display for veteran-ranked players, since vet ranks are now determined by\r\nXP instead of VP.\r\n- Fixed bug where DPS meter was showing when the compass was hidden, i.e. in Inventory display\r\n- New options to fade the main window text and the DPS meter, independent of each other and of\r\nthe main window background. All fades use the same timer.\r\n- Works with Update 5.\r\n\r\nV3.0.1:\r\n- Fixed a problem where the windows would appear on character load, regardless of settings.\r\n- Made the menu \"Reset to Defaults\" button work properly.\r\n\r\nV3.0:\r\n- Continuation of the code refactor. You (hopefully) shouldn't notice much difference in functionality.\r\n- Made some tweaks to the menu.\r\n- Added a keybinding to toggle the DPS meter.\r\n- Updated to API 100009 (Update 4).\r\n\r\nV2.1.1:\r\nImport changes from CLS Easy-as-1.2.3 Edition\r\n\r\nV1.11_Update:\r\nFixed Stupid Mistake (Crit Spam in Chatbox)\r\n\r\nV1.11:\r\nSplit ChatTab Option into new Addon CLSChatTab (dependent on ChatTab Manager and CLS)\r\nAdded Fade Window option\r\nAdded Buff Tracking Toggle\r\nFixed so works with Reticle Settings (not tested)\r\nFixed Skill Line XP Gains\r\nFixed so no longer shows in ESC menu\r\n\r\nV1.10_Update:\r\nForgot to remove Debugging Code (fixed)\r\n\r\nV1.10:\r\nFixed Vamp/WW Skill XP Error\r\nAdded Emperor Skill XP\r\nFixed Skill XP initial wrong amounts\r\nAdded Option to Hook Main Window to Chat Tab \r\nAdded Option to fade with Chat Tab (inherits current fade settings for ChatWindow) \r\nAdded Option to set time to fade after combat ends\r\nAdded Buffer for DPS Window Update w/ Option to turn off\r\nAdded Option to set buffer time delay\r\nChanged the Attack and Heal tabs when in \"UP\" mode to display correctly\r\nAdded ability to scroll Attack and Heal tabs\r\nAdded Main and DPS toggle show/hide buttons to Settings (just incase)\r\nFixed bug that made it so you couldn't disable addon\r\n\r\nKnown bugs:\r\nThe Horizontal Slider does not work atm.\r\n\r\nV1.05:\r\nFixed bugs\r\nAdded Tracking of skill line experience\r\nAdded Options to turn this tracking on or off.\r\n\r\nV1.04:\r\nBunch of fixes\r\nAdded Settings to Game Menu under Settings>\"CLS Settings\"\r\nAdded UP and DOWN direction for text (default is Down)\r\nAdded LT tab which gives you Life-Time Stats\r\nRemoved TimeStamp button (Now in Game Menu Settings)\r\n\r\nV1.03:\r\nFixed Hiding when in Menu Screen and Talking to NPCs\r\n\r\nV1.02:\r\nFixed Launch Day Bugs\r\n\r\nV1.01:\r\nChanged Paul Sage Phrase to normal \"You were hit for x Damage\"\r\nAdded message to the \"/CLS\" display.\r\n\r\nV1.0:\r\nChanged Name of Addon\r\nRemoved old Group Tabs\r\nAdded new Attack and Heal tabs that show statistics on abilities used\r\nAdded Font Size Slider\r\nAdded Output to Chat Box\r\nAdded Hide when in Menu (use \".\" to get cursor to switch tabs)\r\nAdded Wykkyd Easter Egg \r\n\r\nV0.3:\r\nFixed for new patch. \r\nNo Group DPS/%Damage (although can still get breakdown of your abilities from there)\r\nNo Group HPS/%Healing  (although can still get breakdown of your abilities from there)\r\nNo Death Recap\r\n\r\nAdded Healing done to you in Group HPS\r\n\r\nEverything else works to a certain degree.\r\n\r\nV0.22:\r\nAdded Experience and Alliance Point Gains\r\nAdded buttons to turn off Color Categories in the Settings Window\r\nAdded button to change the color and alpha of the background\r\nAdded toggle buttons to turn on and off Power Gains, Experience Gains, Alliance Point Gains\r\nAdded button to toggle always show combat log background.\r\n\r\nFixed scroll bar on Death Recap and Ability Breakdown windows.",
+        "downloads": 174208,
+        "downloadsMonthly": 180,
+        "favorites": 309,
+        "images": [
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw431.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw431.jpg",
+                "description": "Main Window"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw432.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw432.jpg",
+                "description": "Hooked to Chat Tab"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw186.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw186.jpg",
+                "description": "Ability Stat Breakdown"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw33.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw33.jpg",
+                "description": "Personal DPS/HPS Meter"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw433.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw433.jpg",
+                "description": "Settings"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw187.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw187.jpg",
+                "description": "UI"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw189.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw189.jpg",
+                "description": "Defined"
+            }
+        ]
+    },
+    {
+        "id": 1225,
+        "categoryId": 95,
+        "version": "2.01",
+        "lastUpdate": 1590683844000,
+        "checksum": "afe91301552a7415ff8ed83ce1d9f269",
+        "fileName": "FriendRemovedNotification_v2.01.16.zip",
+        "downloadUri": "https://cdn.esoui.com/downloads/getfile.php?id=1225&d=1590683844&minion",
+        "pendingUpdate": 0,
+        "title": "Friend Removed Notification",
+        "author": "CaptainBlagbird",
+        "description": "[SIZE=\"3\"][B][COLOR=\"DA8A00\"]Description[/COLOR][/B][/SIZE]\r\n[INDENT]Adds notification when a player was removed from the friends list.[/INDENT]\r\n\r\n[SIZE=\"3\"][B][COLOR=\"DA8A00\"]Features[/COLOR][/B][/SIZE]\r\n[LIST]\r\n[*]Also displays a notification on start when a friend was removed while the local player was offline.\r\n[*]Languages supported: English / German / French\r\n[/LIST]\r\n\r\n[SIZE=\"3\"][B][COLOR=\"DA8A00\"]Requirements[/COLOR][/B][/SIZE]\r\n[INDENT]To be able to use this add-on you'll need to install this library too:\r\n[LIST]\r\n[*][URL=\"https://www.esoui.com/downloads/info1224\"]LibNotifications[/URL]\r\n[/LIST][/INDENT]",
+        "changeLog": "[SIZE=\"4\"]v2.01[/SIZE] [COLOR=\"DimGray\"](2020-5-28)[/COLOR]\r\n[LIST]\r\n[*]Bugfix (missed reference to Inv Insight after copy/paste\r\n[/LIST]\r\n\r\n[SIZE=\"4\"]v2.00[/SIZE] [COLOR=\"DimGray\"](2020-5-27)[/COLOR]\r\n[LIST]\r\n[*]Separated data between NA/EU servers so notices won't appear when you switch servers\r\n[*]API version updated\r\n[*]It will associate your current friend list to whatever server you log onto first\r\n[/LIST]\r\n\r\n[SIZE=\"4\"]v1.1[/SIZE] [COLOR=\"DimGray\"](partially released: v1.0.14)[/COLOR]\r\n[LIST]\r\n[*]API update\r\n[*]Bug fixes\r\n[*]Notification will still be there after relog/reloadui\r\n[*]Removed libraries (have to be installed manually by the user)\r\n[*]Added German and French translation\r\n[/LIST]\r\n\r\n[SIZE=\"4\"]v1.0[/SIZE] [COLOR=\"DimGray\"](2015-11-05)[/COLOR]\r\n[LIST]\r\n[*]First version\r\n[/LIST]\r\n\r\n---\r\n\r\nCan also be found on [URL=\"https://github.com/CaptainBlagbird/ESO_FriendRemovedNotification/releases\"]GitHub[/URL]",
+        "downloads": 7409,
+        "downloadsMonthly": 50,
+        "favorites": 16,
+        "images": [
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw431.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw431.jpg",
+                "description": "Main Window"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw432.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw432.jpg",
+                "description": "Hooked to Chat Tab"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw186.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw186.jpg",
+                "description": "Ability Stat Breakdown"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw33.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw33.jpg",
+                "description": "Personal DPS/HPS Meter"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw433.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw433.jpg",
+                "description": "Settings"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw187.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw187.jpg",
+                "description": "UI"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw189.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw189.jpg",
+                "description": "Defined"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw3940.png",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw3940.png",
+                "description": "Notification"
+            }
+        ]
+    },
+    {
+        "id": 2101,
+        "categoryId": 20,
+        "version": "1.21",
+        "lastUpdate": 1540258946000,
+        "checksum": "277036942ef9cd17b17f654efdc27236",
+        "fileName": "CraftBagMonitor-v1.21.zip",
+        "downloadUri": "https://cdn.esoui.com/downloads/getfile.php?id=2101&d=1540258946&minion",
+        "pendingUpdate": 0,
+        "title": "Craft Bag Monitor (CBM)",
+        "author": "Fonkin",
+        "description": "[LEFT][IMG]https://image.ibb.co/cUtg5z/Craft_Bag.png[/IMG][SIZE=3]Craft Bag Monitor (CBM)[/SIZE][B] - Track items that are sent to your Craft Bag including their value.[/B]\r\n[/LEFT]\r\n \r\nHave you ever wondered how many items went to your craft bag and how much they were worth after:[LIST]\r\n[*]a dungeon/delve run\r\n[*]accepting hireling resource deliveries\r\n[*]daily writ rewards\r\n[*]deconning items\r\n[*]resource farming[/LIST]Wonder no more! CBM is a command line tool that will answer all those questions and more.\r\n\r\nCBM will also tell you how much in gold you've collected since the last time you checked using the /cbml command.  It's a fast easy way to figure how much gold a specific action netted you.  To use: just before you hit that node, decon that item or tap that delivery girl, type /cbml to get a current report since the last reset.  Perform the action and then rerun /cbml to find out how much your Craft Bag increased in value from the drops.\r\n\r\nIf you have Master Merchant active, CBM will calculate the item's individual and combined worth as well as a grand total of all items collected.\r\n\r\n\r\nCraft Bag Monitor - Usage:\r\n   /cbm - show this help menu\r\n   /cmbl - lists items collected since last reset w/summary\r\n   /cbms - summary only since last reset\r\n   /cmbr - resets list of collected craftbag items\r\n\r\n[B]DEVELOPERS:[/B] I welcome translations.  Just submit the translated .lua file.",
+        "changeLog": "[b]v1.21[/b]\r\n[list]\r\n[*] Version: Updated add-on for Murkmire.\r\n[/list]\r\n\r\n[b]v1.2[/b]\r\n[list]\r\n[*] Enhancement: Added new switch /cbms - Summary only since last reset.\r\n[/list]\r\n\r\n[b]v1.1[/b]\r\n[list]\r\n[*] Enhancement: Reports delta gold value between the last time checked and current.\r\n[/list]\r\n\r\n[b]v1.02[/b]\r\n[list]\r\n[*] Enhancement: Now reports version number in info screen. /cmb  Thanks Pkodyssey for suggestion.\r\n[*] Enhancement: Initializes bag upon first use of /cbml if /cbmr hadn't been used.\r\n[/list]\r\n\r\n[b]v1.01[/b]\r\n\r\n[list]\r\n[*]Bug Fix: Not reporting correct amount of loot collected if stack was over 200.  Thanks to RavenMind for discovering and reporting this.\r\n[/list]\r\n\r\n[b]v1.0[/b]\r\n\r\n[list]\r\n[*]Original release.\r\n[/list]",
+        "downloads": 4365,
+        "downloadsMonthly": 36,
+        "favorites": 9,
+        "images": [
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw431.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw431.jpg",
+                "description": "Main Window"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw432.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw432.jpg",
+                "description": "Hooked to Chat Tab"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw186.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw186.jpg",
+                "description": "Ability Stat Breakdown"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw33.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw33.jpg",
+                "description": "Personal DPS/HPS Meter"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw433.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw433.jpg",
+                "description": "Settings"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw187.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw187.jpg",
+                "description": "UI"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw189.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw189.jpg",
+                "description": "Defined"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw3940.png",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw3940.png",
+                "description": "Notification"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw7117.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw7117.jpg",
+                "description": "/cbm - Help Menu"
+            },
+            {
+                "thumbUrl": "https://cdn-eso.mmoui.com/preview/tiny/pvw7116.jpg",
+                "imageUrl": "https://cdn-eso.mmoui.com/preview/pvw7116.jpg",
+                "description": "/cbml - List Report"
+            }
+        ]
+    }
+]
